@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Kool Form Pack | 404 Not Found Page</title>
+        <title>SDS 404 | 404 Not Found Page</title>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,15 +54,15 @@ Bootstrap 5 Form Pack Template
                                 <span class="text-white me-4 d-none d-lg-block">Stay connected</span>
 
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                    <a href="https://www.instagram.com/" class="social-icon-link bi-instagram"></a>
                                 </li>
 
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                    <a href="https://www.x.com/" class="social-icon-link bi-twitter"></a>
                                 </li>
 
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                    <a href="https://www.whatsapp.com/" class="social-icon-link bi-whatsapp"></a>
                                 </li>
                             </ul>
 
@@ -89,24 +89,24 @@ Bootstrap 5 Form Pack Template
                 <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
                     <nav>
                         <ul>
-                            <li>
-                                <a href="login.html">Login Form</a>
+                             <li>
+                                <a class="active" href="{% url 'login' %}">Login Form</a>
                             </li>
 
                             <li>
-                                <a href="register.html">Create an account</a>
+                                <a href="{% url 'register' %}">Create an account</a>
                             </li>
 
                             <li>
-                                <a href="password-reset.html">Password Reset</a>
+                                <a href="{% url 'password-reset' %}">Password Reset</a>
                             </li>
 
                             <li>
-                                <a class="active" href="404.html">404 Page</a>
+                                <a href="{% url '404' %}">404 Page</a>
                             </li>
 
                             <li>
-                                <a href="contact.html">Contact Form</a>
+                                <a href="{% url 'contact' %}">Contact Form</a>
                             </li>
                         </ul>
                     </nav>
@@ -160,10 +160,10 @@ Bootstrap 5 Form Pack Template
         </main>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/init.js"></script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/countdown.js' %}"></script>
+        <script src="{% static 'js/init.js' %}"></script>
 
     </body>
 </html>
